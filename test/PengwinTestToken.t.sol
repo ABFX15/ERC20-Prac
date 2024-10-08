@@ -4,7 +4,7 @@ pragma solidity ^0.8.18;
 
 import {Test} from "forge-std/Test.sol";
 import {DeployToken} from "../script/DeployToken.s.sol";
-import {PengwinToken} from "../src/PengwinToken.sol";   
+import {PengwinToken} from "../src/PengwinToken.sol";
 
 interface MintableToken {
     function mint(address, uint256) external;

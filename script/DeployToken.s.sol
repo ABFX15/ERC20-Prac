@@ -7,12 +7,11 @@ import {PengwinToken} from "../src/PengwinToken.sol";
 
 contract DeployToken is Script {
     uint256 public constant INITIAL_SUPPLY = 10000 ether;
+
     function run() external returns (PengwinToken) {
         vm.startBroadcast();
         PengwinToken pt = new PengwinToken(INITIAL_SUPPLY);
         vm.stopBroadcast();
         return pt;
     }
-        
 }
-    
